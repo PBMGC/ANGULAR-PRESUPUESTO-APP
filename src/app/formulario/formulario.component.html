@@ -2,22 +2,48 @@
 <!-- ngform es propiedad de angular
 f.form.valid validara cada uno de los inputs, ademas dentro del ngsubit pueden ir operadores
 logicos como && o || -->
-<form (ngSubmit)="f.form.valid && agregarValor()" #f="ngForm">
+<div class="formulario">
+  <form (ngSubmit)="f.form.valid && agregarValor()" #f="ngForm">
     <div class="agregar">
-        <div class="agregar-contenedor">
-            <select (change)="tipoOperacion($event)" [ngClass]="{redfocus:tipo=='egr'}" class="agregar_tipo">
-                <option value="ing" selected>+</option>
-                <option value="egr">-</option>
-            </select>
-            <!-- ngclass es añadir clases de manera dinamica -->
-            <!-- se le consulta si tipo es igual a egr se le agregara redfocus como clase
-            sino no pasara nada -->
-            <input [ngClass]="{redfocus:tipo=='egr'}" type="text" class="agregar_descripcion" placeholder="Nombre Ingreso"
-            name="descripcionInput" [(ngModel)]="descripcionInput" required>
-            <input [ngClass]="{redfocus:tipo=='egr'}" type="number" class="agregar_valor" placeholder="valor"
-            name="valorInput" [(ngModel)]="valorInput" required>
-            <!-- cuando se haga submit realizar la funcion agregar -->
-            <button [ngClass]="{redfocus:tipo=='egr'}" class="agregar_btn" type="submit">+</button>
-        </div>
+      <div class="agregar-contenedor">
+        <select
+          (change)="tipoOperacion($event)"
+          [ngClass]="{ redfocus: tipo == 'egr' }"
+          class="agregar_tipo"
+        >
+          <option value="ing" selected>+</option>
+          <option value="egr">-</option>
+        </select>
+        <!-- ngclass es añadir clases de manera dinamica -->
+        <!-- se le consulta si tipo es igual a egr se le agregara redfocus como clase
+                sino no pasara nada -->
+        <input
+          [ngClass]="{ redfocus: tipo == 'egr' }"
+          type="text"
+          class="agregar_descripcion"
+          placeholder="Nombre Ingreso"
+          name="descripcionInput"
+          [(ngModel)]="descripcionInput"
+          required
+        />
+        <input
+          [ngClass]="{ redfocus: tipo == 'egr' }"
+          type="number"
+          class="agregar_valor"
+          placeholder="valor"
+          name="valorInput"
+          [(ngModel)]="valorInput"
+          required
+        />
+        <!-- cuando se haga submit realizar la funcion agregar -->
+        <button
+          [ngClass]="{ redfocus: tipo == 'egr' }"
+          class="agregar_btn"
+          type="submit"
+        >
+          +
+        </button>
+      </div>
     </div>
-</form>
+  </form>
+</div>

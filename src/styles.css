@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-.redfocus{
-    border-color:red ;
+@import '~normalize.css';
+
+html {
+    box-sizing: border-box;
+
+    font-family: 'Oswald', sans-serif;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.titulo-barra{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 1px;
 }

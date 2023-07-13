@@ -1,0 +1,27 @@
+.formulario{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #181715;
+}
+
+.agregar_tipo,.agregar_descripcion,.agregar_valor{
+    margin-right: 10px;
+    text-align: center;
+}
+.agregar_tipo{
+    width: 50px;
+}
+
+.agregar_descripcion{
+    width: 300px;
+}
+
+.agregar_btn{
+    border: none;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

@@ -6,9 +6,14 @@
 
 <app-formulario></app-formulario>
 
-<div class="contenedor clearfix">
-  <app-ingreso></app-ingreso>
-
-  <app-egreso
+<div class="contenedor">
+  <div class="ingreso">
+    <app-ingreso></app-ingreso>
+  </div>
+  
+  <div class="egreso">
+    <app-egreso
   [ingresoTotal]="getIngresoTotal()"></app-egreso>
+
+  </div>
 </div>

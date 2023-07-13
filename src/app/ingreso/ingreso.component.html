@@ -1,13 +1,12 @@
-<div class="ingreso">
+<div class="ingreso-card">
   <h2 class="ingreso-titulo">Ingresos</h2>
-  
-  <div *ngFor="let ingreso of ingresos" class="elemento limpiarestilo">
+  <div *ngFor="let ingreso of ingresos" class="elemento-i limpiarestilo">
     <div class="elemento-descripcion">{{ingreso.descripcion}}</div>
     <div class="right">
       <div class="elemento_valor">{{ingreso.valor|currency:'PEN':'S/':'1.2-2'}}</div>
-      <div class="elemento_eliminar">
+      <div class="elemento_eliminar-i">
         <!-- le pasamos el objeto ingreso -->
-        <button class="elemento_eliminar--btn" (click)="eliminarRegistro(ingreso)">x</button>
+        <button class="elemento_eliminar--btn-i" (click)="eliminarRegistro(ingreso)">x</button>
       </div>
     </div>
   </div>

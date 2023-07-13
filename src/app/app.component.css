@@ -1,0 +1,25 @@
+/* cabecero */
+.cabecero {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  display: flex;
+}
+
+.ingreso,
+.egreso {
+  width: 50%;
+  padding: 60px;
+}
+
+.ingreso{
+    text-align: center;
+    background-color: #3edf5c;
+}
+
+.egreso{
+    text-align: center;
+    background-color: #ef203e;
+}

@@ -1,0 +1,62 @@
+/* cabecero */
+.cabecero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.prespuesto_ingreso,
+.presupuesto_valor,
+.presupuesto_egreso {
+  flex: 1;
+  text-align: center;
+}
+
+.prespuesto_ingreso{
+    background-color: #3edf5c;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.prespuesto_ingreso p{
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+
+.presupuesto_valor{
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: blue;
+}
+
+
+.presupuesto_egreso{
+  border-radius: 20px;
+  padding-bottom: 5px;
+    background-color: #ef203e;
+}
+
+.presupuesto_egreso p{
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+
+.presupuesto_valor h2 {
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 5px; /* Reduce el margen inferior */
+}
+
+.presupuesto_valor p {
+    font-size: 20px;
+  margin-top: 5px; /* Reduce el margen superior */
+}
