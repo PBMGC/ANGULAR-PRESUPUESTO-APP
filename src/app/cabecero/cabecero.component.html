@@ -1,0 +1,30 @@
+<div class="cabecero">
+    <div class="presupuesto">
+        <div class="presupuesto-titulo">
+            Presupuesto Disponible
+        </div>
+    </div>
+    <!-- esto es un pipe al usar | sirve para indicar que se usara una pipe
+    en este caso la de currency, se agrega el tipo de currency en este caso 
+    soles despues el simbolo
+    y al indicar 1.2-2 le indicmaos que minimo puede tener 
+    2 decimales y maximo puede tener 2 decimales-->
+    <div class="presupuesto_valor">{{presupuestoTotal|currency:'PEN':'S/':'1.2-2'}}</div>
+
+    <div class="prespuesto_ingreso">
+        <div class="prespuesto_ingreso--texto">Ingresos</div>
+        <div>
+            <div class="presupuesto_ingreso--valor">{{ingresoTotal|currency:'PEN':'S/':'1.2-2'}}</div>
+            <div class="presupuesto_ingreso--porcentaje"></div>
+        </div>
+    </div>
+
+    <div class="presupuesto_egreso">
+        <div class="presupuesto_egreso--text">Egresos</div>
+        <div>
+            <div class="presupuesto_egreso--valor">-{{egresoTotal|currency:'PEN':'S/':'1.2-2'}}</div>
+            <div class="presupuesto_egreso--porcentaje">{{porcentajeTotal|percent}}</div>
+        </div>
+    </div>
+
+</div>
